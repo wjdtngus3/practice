@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>querymethod</title>
+</head>
+<body>
+    <h1>입력 가격을 초과하는 메뉴의 목록 조회</h1>
+    <form action="/menu/search">
+        <input type="number" name="menuPrice">원 초과의 메뉴 목록 조회
+        <input type="submit">
+    </form>
+
+    <h1>주문 가능, 또는 불가한 메뉴 목록 조회</h1>
+    <form action="/menu/search1">
+        <input type="text" name="orderableStatus">주문가능한 메뉴(Y), 주문불가한 메뉴(N) 검색
+        <input type="submit">
+    </form>
+
+<!--    <h1>메뉴 이름 또는 키워드 검색</h1>-->
+<!--    <form action="/menu/search2">-->
+<!--        <input type="text" name="CategoryName">특정 카테고리별 메뉴검색-->
+<!--        <input type="submit">-->
+<!--    </form>-->
+
+    <h1>카테고리별 조회(한식,일식 등)</h1>
+    <form action="/menu/search2" method="get">
+        <label for="categoryName">카테고리 이름:</label>
+        <input type="text" id="categoryName" name="categoryName">
+        <input type="submit" value="조회">
+    </form>
+
+</body>
+</html>
